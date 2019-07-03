@@ -8,10 +8,8 @@ const bodyparser = require('koa-bodyparser')
 const logger = require('koa-logger')
 const cors = require('koa2-cors');
 
-const tokenCheck = require('./middleware/loginCheck')
-const {
-    get
-} = require('./db/redis')
+const tokenCheck = require('./middleware/tokenCheck')
+
 // const index = require('./routes/index')
 const users = require('./routes/users')
 const blogs = require('./routes/blogs')
