@@ -23,7 +23,7 @@ module.exports = {
             port: '26246',
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
-            path: '/www/koa2-web-server',
+            path: '/www',
             'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
         },
         dev: {
