@@ -39,7 +39,7 @@ const getBlogDetail = async (id) => {
     if (data.length > 0) {
         return data[0]
     } else {
-        return []
+        return ''
     }
 }
 

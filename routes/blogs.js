@@ -27,7 +27,6 @@ router.get('/list', async (ctx, next) => {
 })
 
 router.get('/detail', async (ctx, next) => {
-    console.log(ctx.query.id)
     const detail = await getBlogDetail(ctx.query.id || -1)
     if (detail) {
         ctx.body = new SuccessModel(detail)

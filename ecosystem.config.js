@@ -23,7 +23,7 @@ module.exports = {
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
             path: '/www/blog-web-server',
-            'post-deploy': 'npm install && pm2 reload ecosystem.config.js'
+            'post-deploy': 'npm install && pm2 reload ecosystem.config.js && pm2 save'
         },
         dev: {
             user: 'root',
@@ -31,7 +31,7 @@ module.exports = {
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
             path: '/www/blog-web-server',
-            'post-deploy': 'npm install && pm2 reload ecosystem.config.js'
+            'post-deploy': 'npm install && pm2 reload ecosystem.config.js && pm2 save'
         }
     }
 };
