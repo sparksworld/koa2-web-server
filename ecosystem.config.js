@@ -22,16 +22,16 @@ module.exports = {
             port: '26246',
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
-            path: '/www/koa2-web-server',
-            'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
+            path: '/www/blog-web-server',
+            'post-deploy': 'npm install && pm2 reload ecosystem.config.js'
         },
         dev: {
             user: 'root',
             host: '127.0.0.1',
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
-            path: '/www/koa2-web-server',
-            'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
+            path: '/www/blog-web-server',
+            'post-deploy': 'npm install && pm2 reload ecosystem.config.js'
         }
     }
 };
