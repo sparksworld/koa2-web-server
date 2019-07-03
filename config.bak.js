@@ -4,12 +4,12 @@ let MY_SQL_CONF = {
     development: {
         host: '127.0.0.1',
         user: 'root',
-        password: 'ta1314520',
+        password: '********',
         port: '3306',
         database: 'sparkblog'
     },
     production: {
-       
+        
     }
 } [env]
 
