@@ -18,19 +18,19 @@ module.exports = {
 
     deploy: {
         production: {
-            user: 'node',
-            host: '212.83.163.1',
+            user: 'root',
+            host: '144.34.168.7',
             ref: 'origin/master',
-            repo: 'git@github.com:repo.git',
-            path: '/var/www/production',
+            repo: 'git@github.com:sparksworld/koa2-web-server.git',
+            path: '/www/koa2-web-server',
             'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
         },
         dev: {
             user: 'root',
             host: '127.0.0.1',
             ref: 'origin/master',
-            repo: 'git@github.com:repo.git',
-            path: '/var/www/production',
+            repo: 'git@github.com:sparksworld/koa2-web-server.git',
+            path: '/www/koa2-web-server',
             'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
         }
     }
