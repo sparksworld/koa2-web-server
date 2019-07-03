@@ -20,6 +20,7 @@ module.exports = {
         production: {
             user: 'root',
             host: '144.34.168.7',
+            port: '26246',
             ref: 'origin/master',
             repo: 'git@github.com:sparksworld/koa2-web-server.git',
             path: '/www/koa2-web-server',
