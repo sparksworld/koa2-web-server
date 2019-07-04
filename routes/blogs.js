@@ -38,7 +38,6 @@ router.get('/detail', async (ctx, next) => {
 router.post('/new', loginCheck, async (ctx, next) => {
     ctx.request.body['author'] = ctx.userInfo.username
     const createId = await createBlog(ctx.request.body)
-    console.log(createId)
     if (createId) {
         ctx.body = new SuccessModel(createId)
     } else {

@@ -5,9 +5,6 @@ const {
 
 /* 初始化数据连接 */
 const con = mysql.createConnection(MY_SQL_CONF)
-console.log(
-    MY_SQL_CONF
-)
 con.config.queryFormat = function(query, values) {
     if (!values) return query;
     return query.replace(/\:(\w+)/g, function(txt, key) {
@@ -31,12 +28,7 @@ function exec(sql, params) {
         })
     })
 }
-exec('select * from users where username=:username or username=:test111;', {
-    username: 'spark',
-    test111: 'test111'
-}).then(res => {
-    console.log(res)
-})
+
 module.exports = {
     exec,
     // escape: mysql.escape
